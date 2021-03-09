@@ -7,8 +7,6 @@ import forms
 import models
 
 DEBUG = True
-PORT = 8000
-HOST = '127.0.0.1'
 
 app = Flask(__name__)
 app.secret_key = 'asfasgfwegtwe43y3574_UERgw34%-t2rwsdaf'
@@ -175,5 +173,5 @@ if __name__ == '__main__':
 		)
 	except ValueError:
 		pass
-	app.run(debug=DEBUG,host = HOST, port = PORT)
+	app.run(debug=DEBUG)
 
